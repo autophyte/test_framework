@@ -1,0 +1,4 @@
+*.pyc
+*_pycache__*
+*.idea*
+data/user.pickle

@@ -1,0 +1,41 @@
+project.name: "wallet"
+default_host: "http://localhost/wallet"
+
+# 连接服务器时默认头
+default_header: {
+  "clientIp": "127.0.0.1",
+  "deviceId": "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+  "deviceType": "1"
+}
+
+default_parameter: {}
+
+# 登录信息
+login.login: 1  # 是否重新登录
+login.user: "15700000001"
+login.password: "9dbe1d80797439ce5c3780c749149c96"
+
+# 钱包数据库信息
+db.wallet.address: "127.0.0.1"
+db.wallet.port: 7788
+db.wallet.user: "wallet"
+db.wallet.password: "111111"
+db.wallet.db: "db_wallet"
+
+# 钱包redis信息
+redis.main.host: "127.0.0.1"
+redis.main.port: 6379
+redis.main.auth: "111111"
+
+# 钱包session信息的redis配置
+redis.session.host: "127.0.0.1"
+redis.session.port: 6379
+redis.session.auth: "111111"
+
+redis.key.prefix.session: "platinum:app:session:"
+redis.key.prefix.token: "platinum:app:token:"
+redis.key.prefix.pwd.error: "platinum:app:user:pwd:error"
+redis.key.prefix.sms: "platinum:app:sms:"
+
+# 是否充许并发运行的测试用例运行
+run.concurrent: false
